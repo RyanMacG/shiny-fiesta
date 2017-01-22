@@ -23,17 +23,17 @@
 \defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
 
 % Remove % to set to different fonts
-\setromanfont [Ligatures={Common},Numbers={OldStyle}]{Helvetica}
-\setmonofont[Scale=0.8]{Monaco}
+\setromanfont [Ligatures={Common},Numbers={OldStyle}]{Helvetica Neue}
+\setmonofont[Scale=0.8]{Operator Mono Light}
 
 % ---- CUSTOM AMPERSAND
-\newcommand{\amper}{{\fontspec[Scale=.95]{Helvetica}\selectfont\itshape\&}}
+\newcommand{\amper}{{\fontspec[Scale=0.8]{Helvetica Neue}\selectfont\itshape\&}}
 
 % ---- MARGIN YEARS
 %\newcommand{\years}[1]{\marginpar{\scriptsize #1}}
 
 % PDF SETUP
-% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+% ---- Resume - Ryan MacGillivray
 
 % Personal Information
 \firstname{Ryan}
@@ -53,20 +53,26 @@
 \section{Summary}
   \cvitem{Description}{Hi, I'm Ryan! I've spent since 2011 working, with Ruby, Ruby on Rails and the Rails stack in general.
   I like to poke at things and see how they work, give talks on things I know nothing about so I have to learn about them and make coffee in an obsessive manner.
-  \newline{}When I'm not playing with Go, Swift or Ruby I sometimes make beer which I then feed to my coworkers or arrange beer and bad movie nights in the office.}
+  \newline{}When I'm not playing with Ruby, Go, or Swift I sometimes make beer which I then feed to my coworkers or arrange beer and bad movie nights in the office.}
 
 \section{Computer Skills}
-  \cvline{Languages:}{Fluent: Ruby, Ruby on Rails\newline{}Working Knowledge: JavaScript, Coffeescript, jQuery, Go, Python}
+  \cvline{Languages:}{Fluent: Ruby, Ruby on Rails\newline{}Working Knowledge: JavaScript, PHP, Coffeescript, jQuery, ReactJS, Go, Python}
 \newline{}
 \section{Experience}
-  \cventry{2015 -- Present}{Developer}{Currency Cloud}{London}{}{
+  \cventry{2016 -- present}{Developer}{Currency Cloud}{London}{}{
+    \begin{itemize}
+      \item Worked as part of a team to deliver a new ReactJS checkout for Dulux
+      \item Worked on new funtionality for Solidus API for the ReactJS checkout
+      \item Worked alongside team to develop internal product during company retreat
+      \item Communicating with clients and maintaining existing applications
+      \item Mentoring of developer outwith company to learn JS
+    \end{itemize}
+  }
+  \cventry{2015 -- 2016}{Developer}{Currency Cloud}{London}{}{
     \begin{itemize}
       \item Working on FinTech platform comprising of JRuby, Sinatra and Rails applications
-      \item Responsible for helping more junior team members with issues
-      \item Maintaining existing platform functionality as well as extending it
       \item Migration of Sinatra application off of HornetQ to RabbitMQ
       \item Migration of Sinatra application off of Torquebox to modern application server
-      \item Development of front end features using Bootstrap and Knockout.JS
     \end{itemize}
   }
   \cventry{2013 -- 2015}{Ruby On Rails Developer}{tictoc family}{Glasgow}{}{
@@ -79,7 +85,6 @@
           \item Established standard JSON format for several disparate APIs
           \item Developed initial prototype and client facing implementation of project
         \end{itemize}
-        \item Led move from headless git server to self hosted GitLab.
         \item Contributed to proprietary Rails 4 based CMS for use in client projects.
       \end{itemize}
   }
@@ -95,6 +100,5 @@
 \section{Extra}
   \cvlistitem{Maintainer of Glub gem - see \url{https://github.com/ryanmacg/glub}}
   \cvlistitem{Built Kerstman secret santa matcher - \newline{}see \url{https://github.com/ryanmacg/kerstman} and \url{https://kerstman.herokuapp.com/}}
-  \cvlistitem{Built UKIP Soundbite Generator Toy - \newline{}see \url{https://github.com/ryanmacg/ukip-butts} and \url{http://ukip.butts.rip/}}
-  \cvlistitem{Delivered lightning talk at Scottish Ruby Users Group on Postgres Arrays in Rails 4 - \newline{}see \url{https://www.haikudeck.com/p/DJFtjsL98H/database-fuckery}}
+  \cvlistitem{Delivered lightning talk at Scottish Ruby Users Group and LRUG on Postgres Arrays in Rails 4 - \newline{}see \url{https://www.haikudeck.com/p/DJFtjsL98H/database-fuckery}}
 \end{document}
